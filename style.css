@@ -106,7 +106,7 @@ html,body{
 }
 
 #page2 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     z-index: 10;
 }
@@ -170,7 +170,7 @@ html,body{
 
 #about-us img{
     height: 220px;
-    width: 220px;
+    width: 190px;
     border-radius: 20px;
     object-fit: cover;
 }
@@ -191,15 +191,38 @@ html,body{
     line-height: 26px;
 }
 
+#cards-container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
 
+.card{
+    height: 80%;
+    width: 24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
 
+#card1{
+    background-image: url(components/card1.jpg);
+    
+}
 
+#card2{
+    background-image: url(components/card2.avif);
+    
+}
 
-
-
-
-
-
+#card3{
+    background-image: url(components/card3.avif);
+    
+}
 
 
 
