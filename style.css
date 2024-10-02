@@ -95,7 +95,7 @@ html,body{
 }
 #page1 h2{
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -117,6 +117,7 @@ html,body{
     overflow-x: auto;
     overflow-y: hidden;
     position: relative;
+    margin-bottom: 120px;
     z-index: 10;
   }
 
@@ -137,6 +138,7 @@ html,body{
     display: inline-block;
     font-size: 120px;
     font-weight: 900;
+    text-transform: uppercase;
     font-family: gilroy;
     margin-right: 20px;
     transition: all linear 0.3s;
@@ -166,6 +168,7 @@ html,body{
     align-items: center;
     position: relative;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 
 #about-us img{
@@ -198,6 +201,7 @@ html,body{
     justify-content: center;
     gap: 70px;
     position: relative;
+    margin-bottom: 30px;
     z-index: 10;
 }
 
@@ -256,13 +260,34 @@ html,body{
     opacity: 1;
 }
 
+.card:hover{
+    transform: rotate3d(-1, 1, 0, 20deg) ;
+}
 
 
+#green-div{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #95C11E;
+}
 
+#green-div h4{
+    width: 45%;
+    line-height: 50px;
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+    font-size: 27px;
+    text-transform: uppercase;
+}
 
-
-
-
+#green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+}
 
 
 
