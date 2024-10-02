@@ -270,7 +270,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #95C11E;
+    background: linear-gradient(to left bottom, #119f3a, #ace022 );
 }
 
 #green-div h4{
