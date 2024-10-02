@@ -188,11 +188,11 @@ html,body{
 
 #about-us-in p{
     font-size: 20px;
-    line-height: 26px;
+    line-height: 36px;
 }
 
 #cards-container{
-    height: 60vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,6 +207,9 @@ html,body{
     border-radius: 20px;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+
 }
 
 #card1{
@@ -224,13 +227,34 @@ html,body{
     
 }
 
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding: 30px;
+    padding-top: 100px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
 
+.overlay h4{
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    /* white-space: nowrap; */
+    margin-bottom: 20px;
+    font-weight: 800;
+}
 
+.overlay p{
+    color: #000;
+    font-size: 18px;
+    
+}
 
-
-
-
-
+.card:hover .overlay{
+    opacity: 1;
+}
 
 
 
