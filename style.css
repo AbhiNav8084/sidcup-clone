@@ -22,7 +22,7 @@ html,body{
     gap: 50px;
     position: fixed;
     justify-content: flex-start;
-    z-index: 999;
+    z-index: 99;
   }
 #nav img {
     height: 70px;
@@ -31,6 +31,25 @@ html,body{
 #nav h4 {
     text-transform: uppercase;
     font-weight: 500;
+}
+
+#cursor{
+    height: 20px ;
+    width: 20px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+}
+
+#cursor-blur{
+    height: 500px ;
+    width: 500px;
+    background-color: #96c11e2b;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
 }
 
 #video{
@@ -43,7 +62,7 @@ html,body{
 
 #main{
     position: relative;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     
 }
@@ -57,6 +76,7 @@ html,body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 10;
 }
 #page1 h1{
     font-size: 7.5vw;
@@ -88,4 +108,126 @@ html,body{
 #page2 {
     height: 100vh;
     width: 100%;
+    z-index: 10;
 }
+
+#scroller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+  }
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: gilroy;
+    margin-right: 20px;
+    transition: all linear 0.3s;
+    color: #000;
+    -webkit-text-stroke: 2px #ffffff;
+}
+
+#scroller h4:hover {
+    color: #95c11e;
+    -webkit-text-stroke: 2px #95c11e;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
