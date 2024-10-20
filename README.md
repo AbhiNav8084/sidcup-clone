@@ -1,1 +1,1 @@
-This website is  clone ofn sidcup family with the help of HTML, CSS and JAVASCIPT
+A  web application Clone inspired by Duo Studio, built using HTML, CSS, Javascript , GSAP, locomotive js
